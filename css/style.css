@@ -1,113 +1,136 @@
 * {
-    box-sizing: border-box;
-    text-align: center;
-    font-family: Catamaran, Sans-serfif;
-    text-transform: uppercase;
-  }
-  
-  body {
-    border-top: .5em solid #00008C;
-  }
-  
-  /* ----------------------------------------
-  Header
-  ------------------------------------------- */
-  
-  h1 a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.25em;
-  }
-  
-  /* ----------------------------------------
-  Navigation Bar
-  ------------------------------------------- */
-  
-  nav li {
-    display: inline-block;
-  }
-  
-  nav a {
-    font-weight: 600;
-  /*  margin: 2rem;*/
-    padding: .25rem 2rem;
-    text-decoration: none;
-    color: black;
-  }
-  
-  nav a:hover {
-    color: #C0C0C0;
-    text-decoration: underline;
-  }
+  box-sizing: border-box;
+/*  text-align: center;*/
+}
 
 /* ----------------------------------------
-About & Testimonials
+Navigation Bar
 ------------------------------------------- */
-.about-box, .testimonial-box, .contact-form {
-    padding-left: 15%;
-    padding-right: 15%;
+.nav-wrapper {
+  text-align: center;
+}
+
+nav a {
+  font-weight: 600;
+  padding: .25rem 2rem;
+  text-decoration: none;
+  color: #10206b;
+}
+
+nav a:hover {
+  color: #C0C0C0;
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* ----------------------------------------
+Styling
+------------------------------------------- */
+.about-box h2, .about-box p, .testimonial-box p {
+  color: white;
+}
+
+.carousel-wrapper h2, .contact-box h2 {
+  color: #10206b;
 }
 
 /* ----------------------------------------
 Comment Form
 ------------------------------------------- */
-.main-wrapper {
-    text-align: center;
+.contact-wrapper {
+  display: flex;
+  flex-flow: row-wrap;
 }
 
-.wrap {
-    max-width: 60rem;
-  
-  }
-  
-  .contact-form form input, .contact-form textarea {
-    color: black;
-    padding: 1em 2em;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: .75em;
-    letter-spacing: .2em;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  form button, textarea {
-    width: 100%;
-    display: block;
-  }
-  
-  .contact input, textarea {
-    border: .2em solid black;
-    padding: 1em 2em;
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 1em;
-    text-align: left;
-    border-spacing: 1em;
-    margin-bottom: 1em;
-  }
-  
-  .contact input {
-    width: 33%;
-  }
-  
-  textarea {
-    height: 12em;
-  }ß
+.contact-box {
+  flex: 1 100%;
+  display: flex;
+}
 
-  /* ----------------------------------------
-  Footer
-  ------------------------------------------- */
-  footer {
-    background-color: black;
-    color: white;
+form {
+  flex: 1;
+}
+
+
+/* ----------------------------------------
+Flex & Media Queries
+------------------------------------------- */
+.contact-wrapper {
+  display: flex;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.main-wrapper > * {
+  flex: 1 100%;
+}
+
+/*.nav-wrapper {
+  background: tomato;
+}
+
+.header-wrapper {
+  background: lightgreen;
+}*/
+
+.about-wrapper {
+  background: #10206b;
+  display: flex;
+}
+
+.about {
+  flex: 1;
+}
+
+.carousel-wrapper {
+  background: #f7f7f7;
+}
+
+.testimonial-wrapper {
+  background: #10206b;
+  display: flex;
+/*   text-align:center; */
+}
+
+.quote-box {
+  flex: 1;
+}
+
+.testimonial-box {
+  flex: 3;
+/*  background:blue;*/
+  text-align: center;
+}
+
+.contact-wrapper {
+/*  background: purple;*/
+  text-align: right;
+}
+
+.footer-wrapper {
+  background: #f7f7f7;
+  display: flex;
+}
+
+.footer {
+  flex: 1;
+  text-align: left;
+}
+
+@media all and (min-width: 600px) {
+  .quote-box { flex: 1 0 0}
+}
+
+@media all and (min-width: 800px) {
+  nav li {
+    display: inline-block;
   }
-  
-  
+}
+
+

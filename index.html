@@ -1,42 +1,67 @@
+<!--
+[ ]Use Flexbox/Grid to create a multi-column layout
+[ ]Be completely responsive
+[X] Include separate HTML/CSS/JavaScript files
+[ ] Keep It Simple and Don't Repeat Yourself
+[ ] Use JavaScript or jQuery for DOM manipulation
+[ ] Be deployed and accessible online
+[ ] Git repository, that includes a link to your hosted site and frequent commits dating back to the beginning of the project
+[ ] README.md 
+-Technologies used.
+-Your process/approach.
+-Unsolved problems.
+-Your biggest wins and challenges.
+[ ] Code highlights
+[ ] Carousel w/ images slide to the side on a timer, along with indicators that the user can click to navigate to a particular project
+[ ] Functionality that allows a carousel image to enlarge in a lightbox when the user clicks on it. Clicking anywhere on the screen when the lightbox is open should close the lightbox.
+[ ]Nav bar functionality
+[ ] Testimonials section in which testimonials rotate in and out on a timer
+[ ] Mobile nav that expands and collapses when a user clicks on the hamburger icon. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
 </head>
 <body>
 
-  <header class="name">
-    <div>
-      <h1><a href="">Lourdes Morales</a></h1>
-    </div>
-  </header>
+<div class="main-wrapper">
 
-  <nav>
+  <nav class="nav-wrapper">
     <!-- hamburger -->
-    <ul>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Testimonials</a></li>
-      <li><a href="#">Contact</a></li>
+<!--     <label for=“toggle”>&#9776;</label>
+    <input type="checkbox" id="toggle"> -->
+    <ul class="menu">
+      <li><a class="bar-categories" href="#">About</a></li>
+      <li><a class="bar-categories" href="#">Portfolio</a></li>
+      <li><a class="bar-categories" href="#">Testimonials</a></li>
+      <li><a class="bar-categories" href="#">Contact</a></li>
     </ul>
   </nav>
 
-  <section class="about">
-    <div class="about-box">
+<!--   <header class="header-wrapper">
+    <div class="name">
+      <h1><a href="">Name</a></h1>
+    </div>
+  </header> -->
+
+  <section class="about-wrapper">
+    <div class="about picture-box">Picture</div>
+    <div class="about about-box">
       <h2>About</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
   </section>
 
-  <section class="projects">
+  <section class="carousel-wrapper">
     <div>
       <h2>Portfolio</h2>
       <di class="carousel">
         <div class="image-wrapper">
-           <img name ="slide" class=projImg>
+           <img name ="slide" class=projImg width="40%">
            <div>
               <button id="start">start</button>
               <button id="stop">stop</button>
@@ -47,53 +72,48 @@
     </div>
   </section>
 
-  <section class="testimonials">
-    <div>
-      <h2>Testimonials</h2>
-      <div class="testimonial-box">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
+  <section class="testimonial-wrapper">
+    <div class="quote-box"></div>
+    <div class="testimonial-box">
+      <p name="quoteslide1">"Bonbon icing tiramisu ice cream candy"</p>
+      <p name="quoteslide2">"Carrot cake gingerbread jujubes sweet roll."</p>
+      <p name="quoteslide3">"Ricotta everyone loves bavarian bergkase."</p>
     </div>
+    <div class="quote-box"></div>
   </section>
-  <section class="contact-form">
-    <div class="wrap">
+
+  <section class="contact-wrapper">
+    <div class="contact-box">
       <h2>Contact</h2>
       <form class="contact">
         <input type="text" placeholder="Name">
         <input type="email" placeholder="Email">
-        <input type="text" placeholder="Phone Number">
         <textarea name="" placeholder="Message"></textarea>
         <button type="submit">Send</button>
-
       </form>
     </div>
   </section>
 
-  <footer>
-    <div class="social links">
-      <!-- LinkedIn -->
-      <a href="#""><i></i></a> 
-      <!-- Github -->
-      <a href="#""><i></i></a> 
-      <!-- Email -->
-      <a href="#""><i></i></a> 
+  <footer class="footer-wrapper">
+    <div class="footer copyright">
+      <p> &copy 2019 Name</p>
     </div>
-    <p> &copy 2019 Lourdes Morales</p>
+    <div class="footer social-links">
+            <!-- LinkedIn -->
+      <a href="#""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+      <!-- Github -->
+      <a href="#""><i class="fa fa-github-square" aria-hidden="true"></i></a>
+      <!-- Email -->
+      <a href="#""><i class="fa fa-envelope-square" aria-hidden="true"></i></a>
+    </div>
   </footer>
+</div>
+  </div>
 
-  <script
+<script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-  <script src="scripts/main.js"></script>
+<script src="scripts/main.js"></script>
 </body>
 </html>
-
-<!-- <div class="carousel">
-
-  </div>
-
-  <div>
-    <button id="start">start</button>
-    <button id="stop">stop</button>
-  </div> -->
