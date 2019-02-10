@@ -9,15 +9,21 @@ Vanilla JavaScript & jQuery
 
 #### Process/Approach
 
-- Insured Git repository was in order.
+- Confirmed git repository was in order.
 - Decomposed project.
-- Created a basic wireframe of project's layout.
+- Created a basic wireframe of project's general layout.
 - Created separate HTML/CSS/JavaScript files.
-- Focused on core functionality at the beginning (carousel functionality).
-- Use JavaScript and jQuery for DOM manipulation.
-- Stick with the KISS (Keep It Simple Stupid) and DRY (Don't Repeat Yourself) principles.
+- Focused on carousel's core functionality from the beginning.
+- Used JavaScript and jQuery for DOM manipulation of carousel, testimonials, and navigation bar.
+- Used logic for carousel and applied it to the testimonials section.
+- Revised project's wireframe.
+- Created flexbox structure with HTML and CSS.
+- Made multiple revisions for flexbox and responsive web design.
+- Made navigation bar functional and mobile navigation bar responsive.
+- Checked that webpage was completely responsive.
 - Made frequent git commits throughout the project.
 - Deployed project to make it accessible online.
+- Improved design with HTML and CSS.
 
 
 ---
@@ -34,7 +40,7 @@ Wins
 - Functional carousel.
 - Design.
 - Flexbox.
-- Mobile navigation bar
+- Mobile navigation bar.
 
 
 Challenges
