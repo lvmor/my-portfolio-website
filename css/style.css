@@ -1,11 +1,88 @@
 * {
   box-sizing: border-box;
+/*  margin: 0 auto;*/
 /*  text-align: center;*/
+}
+
+/* ----------------------------------------
+General Styling
+------------------------------------------- */
+.about-box h2, .about-box p, .testimonial-box p {
+  color: white;
+
+}
+
+.carousel-wrapper h2, .contact-box h2 {
+  color: #10206b;
+}
+
+/* ----------------------------------------
+Header
+------------------------------------------- */
+.header-wrapper {
+    text-align: left;
+    padding: 1em;
+    padding-top: 2em;
+}
+
+.name a {
+  text-decoration: none;
+  text-align: left;
+  font-size: .75em;
+  text-transform: uppercase;
+  color: white;
+  text-align: left;
+/*  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;*/
 }
 
 /* ----------------------------------------
 Navigation Bar
 ------------------------------------------- */
+header {
+/*  background: blue;*/
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+/*nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: blue;
+  width: 100%;
+}
+
+nav ul {*/
+/*  margin: 0;*/
+/*list-style: none;
+margin: 0;
+padding: 0;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+
+}
+
+nav a {*/
+/*  color: #10206b;*/
+/*  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: black;
+}*/
+
+
 .nav-wrapper {
   text-align: center;
 }
@@ -15,6 +92,7 @@ nav a {
   padding: .25rem 2rem;
   text-decoration: none;
   color: #10206b;
+  text-transform: uppercase;
 }
 
 nav a:hover {
@@ -27,41 +105,31 @@ ul {
 }
 
 /* ----------------------------------------
-Styling
+About
 ------------------------------------------- */
-.about-box h2, .about-box p, .testimonial-box p {
-  color: white;
-}
-
-.carousel-wrapper h2, .contact-box h2 {
-  color: #10206b;
+.about {
+  padding: 1em;
 }
 
 /* ----------------------------------------
-Comment Form
+Carousel
 ------------------------------------------- */
-.contact-wrapper {
-  display: flex;
-  flex-flow: row-wrap;
+.carousel-wrapper {
+  text-align: center;
 }
-
-.contact-box {
-  flex: 1 100%;
-  display: flex;
-}
-
-form {
-  flex: 1;
-}
-
 
 /* ----------------------------------------
-Flex & Media Queries
+Contact
 ------------------------------------------- */
 .contact-wrapper {
-  display: flex;
+  text-align: center;
 }
 
+/* ----------------------------------------
+Flex
+------------------------------------------- */
+
+/*Main Flex*/
 .main-wrapper {
   display: flex;
   flex-flow: row wrap;
@@ -71,29 +139,42 @@ Flex & Media Queries
   flex: 1 100%;
 }
 
-/*.nav-wrapper {
-  background: tomato;
+/*Header Flex*/
+/*.header-wrapper {
+  background: lightgreen;
 }
 
-.header-wrapper {
-  background: lightgreen;
+.nav-wrapper {
+  background: tomato;
 }*/
 
+/*About Flex*/
 .about-wrapper {
   background: #10206b;
+  opacity: .8;
   display: flex;
-}
-
-.about {
   flex: 1;
 }
 
+.picture-box {
+  flex: 1;
+  flex-direction: column;
+}
+
+.about-box {
+  flex: 1;
+  flex-direction: column;
+}
+
+/*Carousel Flex*/
 .carousel-wrapper {
   background: #f7f7f7;
 }
 
+/*Testimonial Flex*/
 .testimonial-wrapper {
   background: #10206b;
+  opacity: .8;
   display: flex;
 /*   text-align:center; */
 }
@@ -108,10 +189,7 @@ Flex & Media Queries
   text-align: center;
 }
 
-.contact-wrapper {
-/*  background: purple;*/
-  text-align: right;
-}
+/*Footer Flex*/
 
 .footer-wrapper {
   background: #f7f7f7;
@@ -123,14 +201,23 @@ Flex & Media Queries
   text-align: left;
 }
 
-@media all and (min-width: 600px) {
+/* ----------------------------------------
+Media Queries
+------------------------------------------- */
+/*@media all and (min-width: 600px) {
   .quote-box { flex: 1 0 0}
-}
+}*/
 
 @media all and (min-width: 800px) {
   nav li {
     display: inline-block;
+/*  }
+}*/
+
+/*@media screen and (max-width: 800px) {
+  .main-wrapper {
+    flex-direction: column;
   }
 }
-
+*/
 

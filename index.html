@@ -1,11 +1,11 @@
 <!--
-[ ]Use Flexbox/Grid to create a multi-column layout
+[X]Use Flexbox/Grid to create a multi-column layout
 [ ]Be completely responsive
 [X] Include separate HTML/CSS/JavaScript files
 [ ] Keep It Simple and Don't Repeat Yourself
 [ ] Use JavaScript or jQuery for DOM manipulation
 [ ] Be deployed and accessible online
-[ ] Git repository, that includes a link to your hosted site and frequent commits dating back to the beginning of the project
+[X] Git repository, that includes a link to your hosted site and frequent commits dating back to the beginning of the project
 [ ] README.md 
 -Technologies used.
 -Your process/approach.
@@ -14,7 +14,7 @@
 [ ] Code highlights
 [ ] Carousel w/ images slide to the side on a timer, along with indicators that the user can click to navigate to a particular project
 [ ] Functionality that allows a carousel image to enlarge in a lightbox when the user clicks on it. Clicking anywhere on the screen when the lightbox is open should close the lightbox.
-[ ]Nav bar functionality
+[ ] Nav bar functionality
 [ ] Testimonials section in which testimonials rotate in and out on a timer
 [ ] Mobile nav that expands and collapses when a user clicks on the hamburger icon. -->
 <!DOCTYPE html>
@@ -30,7 +30,13 @@
 
 <div class="main-wrapper">
 
-  <nav class="nav-wrapper">
+    <header class="header-wrapper">
+      <div class="name">
+        <h1 class="name"><a href="">Name</a></h1>
+      </div>
+  </header>
+
+    <nav class="nav-wrapper">
     <!-- hamburger -->
 <!--     <label for=“toggle”>&#9776;</label>
     <input type="checkbox" id="toggle"> -->
@@ -41,12 +47,6 @@
       <li><a class="bar-categories" href="#">Contact</a></li>
     </ul>
   </nav>
-
-<!--   <header class="header-wrapper">
-    <div class="name">
-      <h1><a href="">Name</a></h1>
-    </div>
-  </header> -->
 
   <section class="about-wrapper">
     <div class="about picture-box">Picture</div>
@@ -75,9 +75,9 @@
   <section class="testimonial-wrapper">
     <div class="quote-box"></div>
     <div class="testimonial-box">
-      <p name="quoteslide1">"Bonbon icing tiramisu ice cream candy"</p>
-      <p name="quoteslide2">"Carrot cake gingerbread jujubes sweet roll."</p>
-      <p name="quoteslide3">"Ricotta everyone loves bavarian bergkase."</p>
+      <p name="quote quoteslide1">"Bonbon icing tiramisu ice cream candy"</p>
+      <p name="quote quoteslide2">"Carrot cake gingerbread jujubes sweet roll."</p>
+      <p name="quote quoteslide3">"Ricotta everyone loves bavarian bergkase."</p>
     </div>
     <div class="quote-box"></div>
   </section>
@@ -99,7 +99,7 @@
       <p> &copy 2019 Name</p>
     </div>
     <div class="footer social-links">
-            <!-- LinkedIn -->
+      <!-- LinkedIn -->
       <a href="#""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
       <!-- Github -->
       <a href="#""><i class="fa fa-github-square" aria-hidden="true"></i></a>
