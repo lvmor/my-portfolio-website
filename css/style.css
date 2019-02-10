@@ -9,11 +9,14 @@ General Styling
 ------------------------------------------- */
 .about-box h2, .about-box p, .testimonial-box p {
   color: white;
-
 }
 
 .carousel-wrapper h2, .contact-box h2 {
   color: #10206b;
+}
+
+.about-text {
+  font-size: 1.25em;
 }
 
 /* ----------------------------------------
@@ -28,9 +31,11 @@ Header
 .name a {
   text-decoration: none;
   text-align: left;
-  font-size: .75em;
+  font-size: .6em;
   text-transform: uppercase;
   color: white;
+  font-family: helvetica, sans-serif;
+  font-weight: 600;
   text-align: left;
 /*  -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
@@ -119,11 +124,64 @@ Carousel
 }
 
 /* ----------------------------------------
+Testimonials
+------------------------------------------- */
+.testimonial-wrapper {
+  height: 7em;
+}
+
+/* ----------------------------------------
 Contact
 ------------------------------------------- */
+
 .contact-wrapper {
   text-align: center;
 }
+
+input, textarea {
+  color: #44545E;
+}
+
+input, textarea, .form-btn {
+  padding: 1em 2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: .75em;
+  letter-spacing: .2em;
+  border: .2em solid #10206b;
+  font-weight: 500;
+  font-size: 1em;
+  border-spacing: 1em;
+  margin-bottom: 1em;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-btn , textarea {
+  width: 100%;
+  display: block;
+}
+
+input {
+  width: 49%;
+}
+
+textarea {
+  height: 12em;
+}
+
+.form-btn {
+  background-color: #10206b;
+  color: white;
+  text-align: center;
+}
+
+
 
 /* ----------------------------------------
 Flex

@@ -3,7 +3,7 @@
 [ ]Be completely responsive
 [X] Include separate HTML/CSS/JavaScript files
 [ ] Keep It Simple and Don't Repeat Yourself
-[ ] Use JavaScript or jQuery for DOM manipulation
+[X] Use JavaScript or jQuery for DOM manipulation
 [ ] Be deployed and accessible online
 [X] Git repository, that includes a link to your hosted site and frequent commits dating back to the beginning of the project
 [ ] README.md 
@@ -12,10 +12,10 @@
 -Unsolved problems.
 -Your biggest wins and challenges.
 [ ] Code highlights
-[ ] Carousel w/ images slide to the side on a timer, along with indicators that the user can click to navigate to a particular project
+[X] Carousel w/ images slide to the side on a timer, along with indicators that the user can click to navigate to a particular project
 [ ] Functionality that allows a carousel image to enlarge in a lightbox when the user clicks on it. Clicking anywhere on the screen when the lightbox is open should close the lightbox.
 [ ] Nav bar functionality
-[ ] Testimonials section in which testimonials rotate in and out on a timer
+[X] Testimonials section in which testimonials rotate in and out on a timer
 [ ] Mobile nav that expands and collapses when a user clicks on the hamburger icon. -->
 <!DOCTYPE html>
 <html lang="en">
@@ -32,7 +32,7 @@
 
     <header class="header-wrapper">
       <div class="name">
-        <h1 class="name"><a href="">Name</a></h1>
+        <h1 class="name"><a href="">Lourdes Morales</a></h1>
       </div>
   </header>
 
@@ -49,10 +49,10 @@
   </nav>
 
   <section class="about-wrapper">
-    <div class="about picture-box">Picture</div>
+    <div class="about picture-box"></div>
     <div class="about about-box">
       <h2>About</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
   </section>
 
@@ -74,6 +74,7 @@
   <section class="testimonial-wrapper">
     <div class="quote-box"></div>
     <div class="testimonial-box">
+      <a href="#""><i class="fas fa-quote-right"></i></a>
       <p id="mytext"></p>
     </div>
     <div class="quote-box"></div>
@@ -86,11 +87,10 @@
         <input type="text" placeholder="Name">
         <input type="email" placeholder="Email">
         <textarea name="" placeholder="Message"></textarea>
-        <button type="submit">Send</button>
+        <button class="form-btn" type="submit">Send</button>
       </form>
     </div>
   </section>
-
   <footer class="footer-wrapper">
     <div class="footer copyright">
       <p> &copy 2019 Name</p>
