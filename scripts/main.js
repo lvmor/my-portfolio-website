@@ -1,5 +1,17 @@
+// Navigation Bar
+var toggleStatus = 1;
+function toggleMenu() {
+  if (toggleStatus === 1) {
+    document.getElementById("menu").style.top = "-27em";
+    toggleStatus = 0;
+  } else if (toggleStatus === 0) {
+    document.getElementById("menu").style.top = "0";
+    toggleStatus = 1;
+  }
+}
+// https://www.youtube.com/watch?v=gMRYEPmZf7g&t=737s
+
 // Make images change at an interval
-// //https://www.youtube.com/watch?v=4YQ4svkETS0&t=211s
 let projectImg = ["images/img1.jpeg", "images/img2.jpeg", "images/img3.jpeg"];
 const time = 3000;
 let i = 0
@@ -15,6 +27,7 @@ function imgChange(){
 }
 
 window.onload = imgChange;
+// //https://www.youtube.com/watch?v=4YQ4svkETS0&t=211s
 
 //user can click next or prev to navigate to a particular project
 
