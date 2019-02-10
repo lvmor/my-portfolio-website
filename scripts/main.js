@@ -20,7 +20,7 @@ window.onload = imgChange;
 //carousel image to enlarge in a lightbox when the user clicks on it
 
 $(".projImg").on("click", function (){
-  if($(this).width() == 500) {
+  if($(this).width() == 500){
     $(this).width(214);
   } else {
     $(this).width(500); //asign variable for emsize
@@ -51,3 +51,27 @@ $("#next").on("click", function (){
 function showImage() {
   document.slide.src = projectImg[i];
 }
+
+//testimonials
+quoteOne = "Bonbon icing tiramisu ice cream candy";
+quoteTwo = "Carrot cake gingerbread jujubes sweet roll";
+quoteThree = "Ricotta everyone loves bavarian bergkase";
+
+let quotesList = [quoteOne, quoteTwo, quoteThree];
+let p = 0;
+const quoteTime = 5000;
+
+function quoteChange(){
+$("#mytext").html(quotesList[p]);
+  if(p < quotesList.length - 1){
+    p++;
+  } else {
+    p = 0;
+  }
+  setTimeout("quoteChange()", quoteTime);
+}
+
+window.onload = quoteChange;
+
+
+
