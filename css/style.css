@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding:0;
@@ -141,9 +143,22 @@ nav ul li {
 /* ----------------------------------------
 About
 ------------------------------------------- */
+/*.about-wrapper {
+  padding: 5em;
+  background: url(https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=background-blur-clean-531880.jpg&fm=jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}*/
+
+.aboutBackground {
+  object-fit: cover;
+}
+
 .about-wrapper {
   padding: 5em;
-  background: url(images/img4.jpeg);
+  background: url(https://images.pexels.com/photos/285173/pexels-photo-285173.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 /* ----------------------------------------
@@ -241,6 +256,13 @@ Testimonials
 .testimonial-wrapper {
   padding: 5em;
   line-height: 1em;
+}
+
+.testimonial-wrapper {
+  padding: 5em;
+  background: url(https://images.pexels.com/photos/285173/pexels-photo-285173.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 /*@media screen and (min-width: 800px) {
@@ -375,7 +397,7 @@ Flex
 
 /*About Flex*/
 .about-wrapper {
-  background: #10206b;
+/*  background: #10206b;*/
   opacity: .8;
   display: flex;
   flex: 1;
@@ -425,7 +447,7 @@ Flex
 
 /*Testimonial Flex*/
 .testimonial-wrapper {
-  background: #10206b;
+/*  background: #10206b;*/
   opacity: .8;
   display: flex;
 /*   text-align:center; */
@@ -456,4 +478,3 @@ Flex
 /* ----------------------------------------
 Media Queries
 ------------------------------------------- */
-
