@@ -12,7 +12,8 @@ function toggleMenu() {
 // https://www.youtube.com/watch?v=gMRYEPmZf7g&t=737s
 
 // Make images change at an interval
-let projectImg = ["images/img1.jpeg", "images/img2.jpeg", "images/img3.jpeg"];
+// let projectImg = ["images/img1.jpeg", "images/img2.jpeg", "images/img3.jpeg"];
+let projectImg = ["images/highlight1.jpg", "images/highlight2.jpg", "images/highlight3.jpg"];
 const time = 3000;
 let i = 0
 
@@ -26,7 +27,6 @@ function imgChange(){
   setTimeout("imgChange()", time);
 }
 
-//window.onload = imgChange;
 // //https://www.youtube.com/watch?v=4YQ4svkETS0&t=211s
 
 //user can click next or prev to navigate to a particular project
@@ -40,7 +40,7 @@ $("#previous").on("click", function(){
   showImage();
 });
 
-$("#next").on("click", function (){
+$("#next").on("click", function(){
   i++;
   if(i === projectImg.length){
     i =  0;
@@ -49,22 +49,9 @@ $("#next").on("click", function (){
   showImage();
 });
 
-function showImage() {
+function showImage(){
   document.slide.src = projectImg[i];
 }
-
-//carousel image to enlarge in a lightbox when the user clicks on it
-// $(".projImg").on("click", function ()
-// $(".projImg").on("click", function (){
-//   modal.style.display = "block";
-// });
-
-// $(window).on("click", function (){
-//   modal.style.display = "none";
-// })
-// Get the modal
-
-
 
 //testimonials
 let quoteOne = `"Lourdes is a creative and open-minded individual with strong research skills that make her a dynamic team leader and team player. She can make people’s ideas feel important while also staying focused on the end goal. Working with and for Lourdes has been a humbling and unique experience.” - M. Dueñas Mary Dueñas, M.S. in Counseling, Ph.D. Student in Educational Leadership & Policy Analysis`
@@ -89,7 +76,7 @@ window.onload = function() {
   imgChange();
   quoteChange();
 
-
+//carousel image to enlarge in a lightbox when the user clicks on it
   var modal = document.getElementById('myModal');
 
   // Get the button that opens the modal
@@ -118,7 +105,6 @@ window.onload = function() {
   }
 // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal
 //clicking anywhere on the screen when the lightbox is open should close the lightbox.
-
 };
 
 
