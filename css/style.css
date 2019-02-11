@@ -6,6 +6,12 @@
 /*  text-align: center;*/
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* ----------------------------------------
 General Styling
 ------------------------------------------- */
@@ -24,6 +30,12 @@ General Styling
 
 .contact-wrapper h2, .testimonial-wrapper h2, .carousel-wrapper h2, .about-wrapper h2, .nav-wrapper {
   padding-bottom: 1em;
+}
+
+.about .nameImage {
+  z-index: 2000;
+  float: right;
+  padding-right: 5em;
 }
 
 /* ----------------------------------------
@@ -83,7 +95,7 @@ ul {
     display: block;
   }
 
-    .nav-wrapper {
+.nav-wrapper {
   height: 27em;
   width: 100%;
   background-color: #fff;
@@ -125,6 +137,7 @@ About
 ------------------------------------------- */
 .about-wrapper {
   padding: 5em;
+  background: url(images/img4.jpeg);
 }
 
 /* ----------------------------------------
@@ -133,6 +146,17 @@ Carousel
 .carousel-wrapper {
   padding: 5em;
   text-align: center;
+  height: 50%;
+}
+
+@media screen and (min-width: 800px) {
+  .projImg {
+    width: 70%;
+  }
+
+  #myBtnModal {
+    width: 100%;
+  }
 }
 
 /*bg Modal*/
@@ -165,7 +189,9 @@ Carousel
   transform: rotate(45deg);
 }*/
 
-/* The Modal (background) */
+/* ----------------------------------------
+The Modal (background)
+------------------------------------------- */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -211,6 +237,25 @@ Testimonials
   line-height: 1em;
 }
 
+/*@media screen and (min-width: 800px) {
+  .about p, .testimonial-box p {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 4em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+.about p, .testimonial-box p {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+  h2 {
+    font-size: 1.2em;
+  }
+}
+*/
 /* ----------------------------------------
 Contact
 ------------------------------------------- */
@@ -329,6 +374,33 @@ Flex
   flex-direction: column;
 }
 
+/*@media screen and (min-width: 800px) {
+.about-wrapper {
+  flex-direction: column;
+}
+}
+
+@media screen and (max-width: 900px) {
+.about-wrapper {
+  flex-flow: row wrap;
+}
+}*/
+
+/*@media screen and (min-width: 600px){
+  .about-wrapper  {
+   -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+
+@media screen and (max-width: 600px){
+.about-wrapper  {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}*/
+
 /*Carousel Flex*/
 .carousel-wrapper {
   background: #f7f7f7;
@@ -347,7 +419,7 @@ Flex
 }
 
 .testimonial-box {
-  flex: 3;
+  flex: 5;
 /*  background:blue;*/
   text-align: center;
 }
@@ -367,20 +439,4 @@ Flex
 /* ----------------------------------------
 Media Queries
 ------------------------------------------- */
-/*@media all and (min-width: 600px) {
-  .quote-box { flex: 1 0 0}
-}
-
-@media screen and (max-width: 800px) {
-  .main-wrapper {
-    flex-direction: column;
-  }
-}
-*/
-
-/* ----------------------------------------
-The Modal (background)
-------------------------------------------- */
-
-
 
