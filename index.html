@@ -13,7 +13,7 @@
 -Your biggest wins and challenges.
 [ ] Code highlights
 [X] Carousel w/ images slide to the side on a timer, along with indicators that the user can click to navigate to a particular project
-[ ] Functionality that allows a carousel image to enlarge in a lightbox when the user clicks on it. Clicking anywhere on the screen when the lightbox is open should close the lightbox.
+[X] Functionality that allows a carousel image to enlarge in a lightbox when the user clicks on it. Clicking anywhere on the screen when the lightbox is open should close the lightbox.
 [X] Nav bar functionality
 [X] Testimonials section in which testimonials rotate in and out on a timer
 [X] Mobile nav that expands and collapses when a user clicks on the hamburger icon. -->
@@ -21,7 +21,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Lourdes Portfolio</title>
+  <title>Portfolio</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
@@ -33,11 +33,11 @@
     <!-- hamburger -->
 <!--     <label for=“toggle”>&#9776;</label>
     <input type="checkbox" id="toggle"> -->
-    <ul class="menu">
-      <li><a class="bar-categories" href="#about">About</a></li>
-      <li><a class="bar-categories" href="#portfolio">Portfolio</a></li>
-      <li><a class="bar-categories" href="#testimonials">Testimonials</a></li>
-      <li><a class="bar-categories" href="#contact">Contact</a></li>
+    <ul class="menu-box" onclick="toggleMenu()">
+      <li><a class="menu1" href="#about">About</a></li>
+      <li><a class="menu1" href="#portfolio">Portfolio</a></li>
+      <li><a class="menu1" href="#testimonials">Testimonials</a></li>
+      <li><a class="menu1" href="#contact">Contact</a></li>
     </ul>
   </nav>
 
@@ -49,13 +49,25 @@
     </div>
   </section>
 
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img id="myBtnModal" name ="slideModal" class="projImg" width="80%">
+  </div>
+</div>
+
   <section class="carousel-wrapper">
     <div>
       <h2><a name="portfolio">Portfolio</a></h2>
       <di class="carousel">
-        <div id="myModal" class="image-wrapper modal">
-           <span class="close"></span>
-           <img id="myBtn" name ="slide" class="projImg" width="40%">
+        <div id="myModal" class="image-wrapper">
+
+           <img id="slideImage" name ="slide" class="projImg" width="40%">
         <div>
           <button id="previous" class="btns">previous</button>
           <button id="next" class="btns">next</button>
@@ -70,7 +82,7 @@
     <div class="testimonial-box">
       <h2><a name="testimonials">Testimonials</a></h2>
       <p id="mytext"></p>
-      <P>"It's a rarity to find people who not only encompass true work ethic and a yearning to problem solve. Lourdes surpasses that as she produces outcomes by understanding that her work will impact those she serves. Lourdes is a multi-talented person. Her knowledge and implementation of technology interwoven with a yearning to positively impact people's lives is a rare sight." - V. Castañeda, MA Ed. Education Consultant.</P>
+<!--       <P>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"</P> -->
     </div>
     <div class="quote-box"></div>
   </section>
