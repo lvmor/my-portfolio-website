@@ -1,14 +1,14 @@
 // Navigation Bar
-var toggleStatus = 1;
-function toggleMenu() {
-  if (toggleStatus === 1) {
-    document.getElementById("menu").style.top = "-27em";
-    toggleStatus = 0;
-  } else if (toggleStatus === 0) {
-    document.getElementById("menu").style.top = "0";
-    toggleStatus = 1;
-  }
-}
+// var toggleStatus = 1;
+// function toggleMenu() {
+//   if (toggleStatus === 1) {
+//     document.getElementById("menu").style.top = "-27em";
+//     toggleStatus = 0;
+//   } else if (toggleStatus === 0) {
+//     document.getElementById("menu").style.top = "0";
+//     toggleStatus = 1;
+//   }
+// }
 // https://www.youtube.com/watch?v=gMRYEPmZf7g&t=737s
 
 // Make images change at an interval
@@ -55,13 +55,13 @@ function showImage() {
 
 //carousel image to enlarge in a lightbox when the user clicks on it
 
-$(".projImg").on("click", function (){
-  modal.style.display = "block";
-});
+// $(".projImg").on("click", function (){
+//   modal.style.display = "block";
+// });
 
-$(window).on("click", function (){
-  modal.style.display = "none";
-})
+// $(window).on("click", function (){
+//   modal.style.display = "none";
+// })
 
 // var modal = document.getElementById("myModal");
 
@@ -105,8 +105,8 @@ $(window).on("click", function (){
 
 //testimonials
 quoteOne = "Bonbon icing tiramisu ice cream candy";
-quoteTwo = "Carrot cake gingerbread jujubes sweet roll";
-quoteThree = "Ricotta everyone loves bavarian bergkase";
+quoteTwo = `"It's a rarity to find people who not only encompass true work ethic and a yearning to problem solve. Lourdes surpasses that as she produces outcomes by understanding that her work will impact those she serves. Lourdes is a multi-talented person. Her knowledge and implementation of technology interwoven with a yearning to positively impact people's lives is a rare sight." - V. Castañeda, MA Ed. Education Consultant.`;
+quoteThree = `"I’ve known Lourdes for the past 6 years. I’ve had the opportunity to work with her on a very personal level and as a part of an organization at the University of California in Irvine. She is someone that has shown great strength in being a leader, as well as a creative force when it comes to art and problem solving. Lourdes uses lateral thinking to come up with solutions to problems and situations that arise in multiple areas of her life. It has always been my pleasure to work with her and I would highly recommend anybody to work with her." - R. Aceves`;
 
 let quotesList = [quoteOne, quoteTwo, quoteThree];
 let p = 0;
