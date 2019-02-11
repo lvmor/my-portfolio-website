@@ -30,6 +30,7 @@ Vanilla JavaScript & jQuery
 
 #### Unsolved problems
 
+- responsive web design.
 
 ---
 
@@ -38,9 +39,9 @@ Vanilla JavaScript & jQuery
 Wins
 
 - Functional carousel.
-- Design.
+- Testimonials
+- Modal box.
 - Flexbox.
-- Mobile navigation bar.
 
 
 Challenges
@@ -48,7 +49,6 @@ Challenges
 - Flexbox.
 - Responsive web design.
 - Creating a modal box.
-- Asynchronicity.
 
 
 ---
