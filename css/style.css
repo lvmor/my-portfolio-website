@@ -1,6 +1,6 @@
 * {
-/*  margin: 0;
-  padding:0;*/
+  margin: 0;
+  padding:0;
   box-sizing: border-box;
 /*  margin: 0 auto;*/
 /*  text-align: center;*/
@@ -22,7 +22,11 @@ General Styling
 }
 
 .about p, .testimonial-box p {
-  font-size: 1.5em;
+  font-size: 1.1em;
+}
+
+.contact-wrapper h2, .testimonial-wrapper h2, .carousel-wrapper h2, .about-wrapper h2, .nav-wrapper {
+  padding-bottom: 1em;
 }
 
 /* ----------------------------------------
@@ -122,14 +126,15 @@ nav ul li {
 /* ----------------------------------------
 About
 ------------------------------------------- */
-.about {
-  padding-right: 2em;
+.about-wrapper {
+  padding: 4em;
 }
 
 /* ----------------------------------------
 Carousel
 ------------------------------------------- */
 .carousel-wrapper {
+  padding: 4em;
   text-align: center;
 }
 
@@ -137,7 +142,7 @@ Carousel
 Testimonials
 ------------------------------------------- */
 .testimonial-wrapper {
-  height: 15em;
+  padding: 4em;
 }
 
 /* ----------------------------------------
@@ -145,6 +150,7 @@ Contact
 ------------------------------------------- */
 
 .contact-wrapper {
+  padding: 4em 8em;
   text-align: center;
 }
 
@@ -183,6 +189,21 @@ input {
 
 textarea {
   height: 12em;
+}
+
+/* ----------------------------------------
+Footer
+------------------------------------------- */
+.footer {
+  margin: 1.5em;
+  color: darkgray;
+  font-size: 1em;
+}
+
+footer .social-links a {
+  color: darkgray;
+  letter-spacing: .5em;
+  font-size: 1.5em;
 }
 
 /* ----------------------------------------
