@@ -13,7 +13,8 @@ function toggleMenu() {
 
 // Make images change at an interval
 // let projectImg = ["images/img1.jpeg", "images/img2.jpeg", "images/img3.jpeg"];
-let projectImg = ["images/highlight1.jpg", "images/highlight2.jpg", "images/highlight3.jpg"];
+let projectImg = ["images/highlight1.jpg", "images/highlight2.jpg"];
+// , "images/highlight3.jpg"
 const time = 3000;
 let i = 0
 

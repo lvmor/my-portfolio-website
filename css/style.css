@@ -66,6 +66,8 @@ Navigation Bar
 ------------------------------------------- */
 .nav-wrapper {
   text-align: center;
+  padding-top: 1.5em;
+  padding-top: 1.5em;
 }
 
 nav a {
@@ -122,9 +124,13 @@ nav ul li {
   padding: .25em 0;
   margin-top: 4.5em;
 }
+}
 
+  @media (min-width: 860px) {
+  #toggleMenu {
+      display: none;
+    }
   }
-
 /*big*/
 @media screen and (min-width: 800px) {
     nav li {
@@ -331,6 +337,17 @@ button:hover, #previous:hover, #next:hover {
   opacity: .8;
   color: #10206b;
   border: .2em solid #10206b;
+}
+
+#previous, #next {
+  height: 2em;
+  width: 2em;
+  text-align: center;
+  background-color: darkgray;
+  opacity: .7;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 1em;
 }
 
 /* ----------------------------------------
