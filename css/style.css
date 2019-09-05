@@ -1,11 +1,8 @@
 
-
 * {
   margin: 0;
   padding:0;
   box-sizing: border-box;
-/*  margin: 0 auto;*/
-/*  text-align: center;*/
 }
 
 .clearfix:after {
@@ -475,6 +472,12 @@ Flex
   text-align: left;
 }
 
-/* ----------------------------------------
-Media Queries
-------------------------------------------- */
+h6 {
+  font-size: .85em;
+  padding-top: .75em;
+}
+
+.about-text {
+  color: white;
+  font-size: 1.5em;
+}
