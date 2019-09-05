@@ -1,120 +1,95 @@
-<!--
-[X]Use Flexbox/Grid to create a multi-column layout
-[ ]Be completely responsive
-[X] Include separate HTML/CSS/JavaScript files
-[X] Keep It Simple and Don't Repeat Yourself
-[X] Use JavaScript or jQuery for DOM manipulation
-[X] Be deployed and accessible online
-[X] Git repository, that includes a link to your hosted site and frequent commits dating back to the beginning of the project
-[X] README.md 
--Technologies used.
--Your process/approach.
--Unsolved problems.
--Your biggest wins and challenges.
-[X] Code highlights
-[X] Carousel w/ images slide to the side on a timer, along with indicators that the user can click to navigate to a particular project
-[X] Functionality that allows a carousel image to enlarge in a lightbox when the user clicks on it. Clicking anywhere on the screen when the lightbox is open should close the lightbox.
-[X] Nav bar functionality
-[X] Testimonials section in which testimonials rotate in and out on a timer
-[X] Mobile nav that expands and collapses when a user clicks on the hamburger icon. -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Portfolio</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
+
 <body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <div class="main-wrapper">
-    <div id="toggleMenu" onclick="toggleMenu()">&#9776;</div>
-  <nav id="menu" class="nav-wrapper">
-    <!-- hamburger -->
-<!--     <label for=“toggle”>&#9776;</label>
-    <input type="checkbox" id="toggle"> -->
-    <ul class="menu-box" onclick="toggleMenu()">
-      <li><a class="menu1" href="#about">About</a></li>
-      <li><a class="menu1" href="#portfolio">Portfolio</a></li>
-      <li><a class="menu1" href="#testimonials">Testimonials</a></li>
-      <li><a class="menu1" href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <section class="about-wrapper">
-    <div class="about picture-box">
-      <img class="nameImage" src="images/LM.jpg" alt="Lourdes Morales">
-    </div>
-    <div class="about about-box">
-      <h2><a name="about">About</a></h2>
-      <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-  </section>
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <img id="myBtnModal" name ="slideModal" class="projImg" width="80%">
-  </div>
-</div>
-
-  <section class="carousel-wrapper">
-    <div>
-      <h2><a name="portfolio">Portfolio</a></h2>
-      <di class="carousel">
-        <div id="myModal" class="image-wrapper">
-
-           <img id="slideImage" name ="slide" class="projImg" width="40%">
-        <div>
-          <button id="previous" class="btns"></button>
-          <button id="next" class="btns"></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Portfolio
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://lvmor.github.io/earicle_2.0/">Earicle</a>
+              <a class="dropdown-item" href="https://grow-flask.herokuapp.com/about/">Grow</a>
+              <a class="dropdown-item" href="https://safe-beach-22791.herokuapp.com/">Wayfarer</a>
+            </div>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="flyers.html">Flyers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:lvm.lspa@gmail.com">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner bg-info" role="listbox">
+        <div class="carousel-item active">
+          <div class="d-flex align-items-center justify-content-center min-vh-100" style="background-color:black">
+            <p class="about-text" style="font-family: 'Avenir', serif;"> Creative | Artist | Web Developer |
+              Videographer |
+              Researcher </p>
+          </div>
         </div>
-        </div>
-      </di>
+      </div>
     </div>
-  </section>
+    <footer class="footer-wrapper">
+      <div class="footer copyright text-left">
+        <h6> &copy 2012-2019 Lourdes Morales. All Rights Reserved.</h6>
+      </div>
+      <div class="footer social-links text-right">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/lourdesmorales1/"><i class=" fa fa-linkedin-square"
+            aria-hidden="true"></i></a>
+        <!-- Github -->
+        <a href="https://www.github.com/lvmor/"><i class=" fa fa-github-square" aria-hidden="true"></i></a>
+        <!-- Email -->
+        <a href="mailto:lvm.lspa@gmail.com"><i class=" fa fa-envelope-square" aria-hidden="true"></i></a>
+      </div>
+    </footer>
+  </main>
 
-  <section class="testimonial-wrapper">
-    <div class="quote-box"></div>
-    <div class="testimonial-box">
-      <h2><a name="testimonials">Testimonials</a></h2>
-      <p id="mytext"></p>
-    </div>
-    <div class="quote-box"></div>
-  </section>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="scripts/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
-  <section class="contact-wrapper">
-    <div class="contact-box">
-      <h2><a name="contact">Contact</a></h2>
-
-      <form class="contact">
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
-        <textarea name="" placeholder="Message"></textarea>
-        <button class="form-btn" type="submit">Send</button>
-      </form>
-    </div>
-  </section>
-  <footer class="footer-wrapper">
-    <div class="footer copyright">
-      <p> &copy 2019 Lourdes Morales</p>
-    </div>
-    <div class="footer social-links">
-      <!-- LinkedIn -->
-      <a href="#""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-      <!-- Github -->
-      <a href="#""><i class="fa fa-github-square" aria-hidden="true"></i></a>
-      <!-- Email -->
-      <a href="#""><i class="fa fa-envelope-square" aria-hidden="true"></i></a>
-    </div>
-  </footer>
-</div>
-  </div>
-
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-<script src="scripts/main.js"></script>
 </body>
+
 </html>
